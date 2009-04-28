@@ -13,11 +13,11 @@ end
 
 spec = Gem::Specification.new do |s|
   s.name              = "dynamic_sass"
-  s.version           = "0.1.0"
+  s.version           = "0.1.1"
   s.summary           = "Plugin to generate SASS on the fly instead of before each request."
   s.author            = "Tom Lea"
-  s.email             = "contrig@tomlea.co.uk"
-  s.homepage          = "http://cwninja.com"
+  s.email             = "contrib@tomlea.co.uk"
+  s.homepage          = "http://cwninja.com/"
 
   s.has_rdoc          = true
   s.extra_rdoc_files  = %w(README.markdown)
