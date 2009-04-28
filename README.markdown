@@ -8,11 +8,12 @@ This is handy for platforms like heroku which have a read only file system, but 
 1. Install the plugin, you should know how to do that by now.
 2. Make sure it loads immediately after haml (it has to undo some of HAML's work).
 
-## Enforcing the load order
+## By Example
 
-Add the following line into your environment.rb near the end:
+Add the following lines to your environment.rb near the end of the initializer block:
 
-    config.plugins = [:haml, :dynamic_sass, :all]
+    config.gem "cwninja-dynamic_sass", :source => "http://gems.github.com/", :lib => false
+    config.plugins = ["haml", "cwninja-dynamic_sass", :all]
 
 And your done.
 
