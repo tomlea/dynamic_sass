@@ -13,7 +13,7 @@ end
 
 spec = Gem::Specification.new do |s|
   s.name              = "dynamic_sass"
-  s.version           = "0.1.1"
+  s.version           = "0.1.2"
   s.summary           = "Plugin to generate SASS on the fly instead of before each request."
   s.author            = "Tom Lea"
   s.email             = "contrib@tomlea.co.uk"
@@ -24,8 +24,6 @@ spec = Gem::Specification.new do |s|
   s.rdoc_options      = %w(--main README.markdown)
 
   s.files             = %w(README.markdown) + Dir.glob("{test,rails,config,app}/**/*")
-
-  s.add_dependency("haml")
 
   s.add_development_dependency("shoulda")
 end
